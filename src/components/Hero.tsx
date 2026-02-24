@@ -3,12 +3,12 @@ import { motion } from 'framer-motion';
 
 export function Hero() {
     return (
-        <section className="relative pt-24 pb-12 md:pt-32 md:pb-24 overflow-hidden bg-background-alt">
+        <section className="relative min-h-screen flex items-center pt-24 pb-12 md:pt-32 md:pb-24 overflow-hidden bg-background-alt">
             {/* Abstract Background Shapes */}
             <div className="absolute top-0 right-0 w-1/3 h-full bg-secondary/10 -skew-x-12 translate-x-20" />
             <div className="absolute bottom-0 left-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl translate-y-20 -translate-x-20" />
 
-            <div className="container-custom relative z-10">
+            <div className="container-custom relative z-10 w-full">
                 <div className="max-w-4xl mx-auto text-center">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}

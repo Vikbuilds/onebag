@@ -34,7 +34,7 @@ export function MerchantsSection() {
                         </h2>
 
                         <p className="text-lg text-text-secondary mb-8 leading-relaxed">
-                            Retail shops spend money every day on disposable or regulation-compliant carry bags. OneBag removes that recurring burden and adds more value.
+                            <strong className="font-bold underline italic">One</strong> <strong className="font-bold">Bag</strong> turns packaging into a strategic asset — lowering costs through sponsored placements, enabling self-branding, and unlocking insights through integrated feedback tools.
                         </p>
 
                         <ul className="space-y-4 mb-10">

@@ -20,7 +20,7 @@ export function HowItWorks() {
         {
             num: "04",
             title: <span>Everyone <span className="italic">Wins</span></span>,
-            desc: "Shops save money, brands get visibility, and plastic waste is reduced."
+            desc: "Shops save money, brands get visibility, consumers get value for their attention and plastic waste is reduced."
         }
     ];
 

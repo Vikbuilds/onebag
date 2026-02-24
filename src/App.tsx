@@ -1,34 +1,35 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Navbar } from './components/Navbar';
-import { Hero } from './components/Hero';
-import { WhatIsOneBag } from './components/WhatIsOneBag';
-import { MerchantsSection } from './components/MerchantsSection';
-import { ShopProfilePreview } from './components/ShopProfilePreview';
-import { QRExperience } from './components/QRExperience';
-import { BrandPreview } from './components/BrandPreview';
-import { BrandsSection } from './components/BrandsSection';
-import { HowItWorks } from './components/HowItWorks';
-import { Mission } from './components/Mission';
-import { EarlyAccess } from './components/EarlyAccess';
-import { Footer } from './components/Footer';
+import { Home } from './pages/Home';
+import { Auth } from './pages/Auth';
+import { Dashboard } from './pages/Dashboard';
+import { ShopPage } from './pages/ShopPage';
+import { AuthProvider } from './contexts/AuthContext';
+import { ProtectedRoute } from './components/ProtectedRoute';
 
 function App() {
   return (
-    <div className="min-h-screen bg-background font-sans text-text-primary selection:bg-secondary/50">
-      <Navbar />
-      <Hero />
-      <WhatIsOneBag />
-      <MerchantsSection />
-      <ShopProfilePreview />
-      <QRExperience />
-      <BrandPreview />
-      <BrandsSection />
-      <HowItWorks />
-      <Mission />
-      <EarlyAccess />
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <AuthProvider>
+        <div className="min-h-screen bg-background font-sans text-text-primary selection:bg-secondary/50">
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/auth" element={<Auth />} />
+            <Route
+              path="/dashboard"
+              element={
+                <ProtectedRoute>
+                  <Dashboard />
+                </ProtectedRoute>
+              }
+            />
+            <Route path="/shop/:slug" element={<ShopPage />} />
+          </Routes>
+        </div>
+      </AuthProvider>
+    </BrowserRouter>
   );
 }
 
 export default App;
-

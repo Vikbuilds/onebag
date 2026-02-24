@@ -19,7 +19,7 @@ export function Mission() {
                         </div>
                         <h3 className="text-3xl font-serif mb-4 text-primary">Our <span className="italic">Mission</span></h3>
                         <p className="text-lg text-text-secondary leading-relaxed">
-                            To reduce packaging burden on retail shops, improve everyday shopping experiences, and create a meaningful offline-to-online brand connection.
+                            To humanize advertising, repair broken feedback loops, and create a fair value exchange for consumer attention — transforming packaging from a passive utility into an active commerce infrastructure.
                         </p>
                     </motion.div>
 
@@ -35,7 +35,7 @@ export function Mission() {
                         </div>
                         <h3 className="text-3xl font-serif mb-4">Our <span className="italic">Vision</span></h3>
                         <p className="text-lg text-white/80 leading-relaxed">
-                            To become the default packaging and retail enablement platform, replacing single-use carry bags with reusable, connected alternatives.
+                            To build a world where every physical commerce interaction is a meaningful digital connection — starting with the humble carry bag.
                         </p>
                     </motion.div>
 
