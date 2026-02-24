@@ -45,7 +45,7 @@ export function BrandsSection() {
                             The New <span className="italic">Out-of-Home</span> <br /> Advertising Medium.
                         </h2>
                         <p className="text-lg md:text-xl text-white/80 leading-relaxed">
-                            <strong className="font-bold underline italic">One</strong> <strong className="font-bold">Bag</strong> converts everyday retail movement into contextual, performance-driven visibility — reducing wasted spend on skipped digital ads and enabling measurable engagement and structured feedback.
+                            OneBag converts everyday retail movement into contextual, performance-driven visibility — reducing wasted spend on skipped digital ads and enabling measurable engagement and structured feedback.
                         </p>
                     </motion.div>
                 </div>
